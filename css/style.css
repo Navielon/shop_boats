@@ -56,7 +56,7 @@ body {
 }
 
 body {
-  color: #000;
+  color: #2F3035;
   line-height: 1.2;
   font-family: "SFProDisplay";
   font-size: 1.25rem;
@@ -147,11 +147,11 @@ h6 {
 */
 
 [class*=__container] {
-  max-width: 75rem;
+  max-width: 75.625rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
-  padding: 0 0.9375rem;
+  padding: 0 1.25rem;
 }
 
 [class*=-ibg] {
@@ -185,6 +185,7 @@ h6 {
           align-items: center;
   min-height: 7.625rem;
   font-weight: 700;
+  padding: 0 1.25rem;
 }
 
 .header__box {
@@ -208,6 +209,10 @@ h6 {
   height: 1.875rem;
   left: 0;
   top: 0.3125rem;
+}
+
+.header__bottom {
+  margin-bottom: 4.875rem;
 }
 
 .menu__list {
@@ -238,6 +243,54 @@ h6 {
   padding-right: 0.625rem;
 }
 
+.menu-categories {
+  background-color: #F0F0F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 3.3125rem;
+  padding: 0 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-categories__link {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0.9375rem 0 0.875rem;
+  position: relative;
+  display: inline-block;
+}
+
+.menu-categories__link::before {
+  content: "";
+  width: 0;
+  left: auto;
+  right: 0;
+  position: absolute;
+  background-color: #1C62CD;
+  height: 0.1875rem;
+  bottom: 0rem;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.menu-categories__link:hover {
+  color: #000;
+}
+
+.menu-categories__link:hover::before {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
 .basket {
   position: relative;
 }
@@ -253,56 +306,6 @@ h6 {
   background-color: #1C62CD;
   border-radius: 50%;
   text-align: center;
-  bottom: -0.9375rem;
-  right: -0.875rem;
+  bottom: -0.5rem;
+  right: -0.9375rem;
 }
-
-/*
-.icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: rem(30);
-		height: rem(18);
-		cursor: pointer;
-		z-index: 5;
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			right: 0;
-			position: absolute;
-			width: 100%;
-			height: rem(2);
-			background-color: #000;
-		}
-		&::before {
-			top: 0;
-		}
-		&::after {
-			bottom: 0;
-		}
-		span {
-			top: calc(50% - rem(1));
-		}
-		.menu-open & {
-			span {
-				width: 0;
-			}
-			&::before,
-			&::after {
-			}
-			&::before {
-				top: calc(50% - rem(1));
-				transform: rotate(-45deg);
-			}
-			&::after {
-				bottom: calc(50% - rem(1));
-				transform: rotate(45deg);
-			}
-		}
-	}
-}
-*/
