@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220627002609">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220627185043">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,13 +101,106 @@
 			</div>
 		</header>
 		<main class="page">
+			<section class="banner-section page__section">
+				<div class="banner-section__container">
+					<div class="banner-section__inner">
+						<div class="banner-section__slider">
+							<a class="banner-section__slider-item" href="#">
+								<picture><source srcset="img/slider/01.webp" type="image/webp"><img class="banner-section__slider-img" src="img/slider/01.jpg" alt="Banner3"></picture>
+							</a>
+							<a class="banner-section__slider-item" href="#">
+								<picture><source srcset="img/slider/01.webp" type="image/webp"><img class="banner-section__slider-img" src="img/slider/01.jpg" alt="Banner3"></picture>
+							</a>
+							<a class="banner-section__slider-item" href="#">
+								<picture><source srcset="img/slider/01.webp" type="image/webp"><img class="banner-section__slider-img" src="img/slider/01.jpg" alt="Banner3"></picture>
+							</a>
+							<a class="banner-section__slider-item" href="#">
+								<picture><source srcset="img/slider/01.webp" type="image/webp"><img class="banner-section__slider-img" src="img/slider/01.jpg" alt="Banner3"></picture>
+							</a>
+							<a class="banner-section__slider-item" href="#">
+								<picture><source srcset="img/slider/01.webp" type="image/webp"><img class="banner-section__slider-img" src="img/slider/01.jpg" alt="Banner3"></picture>
+							</a>
+							<a class="banner-section__slider-item" href="#">
+								<picture><source srcset="img/slider/01.webp" type="image/webp"><img class="banner-section__slider-img" src="img/slider/01.jpg" alt="Banner3"></picture>
+							</a>
+						</div>
+						<a class="banner-section__item sale-item">
+							<div class="sale-item__top">
+								<p class="sale-item__info">
+									акция
+								</p>
+								<div class="sale-item__price">
+									<div class="price sale-item__price-new">
+										190 000
+									</div>
+									<div class="price sale-item__price-old">
+										225 000
+									</div>
+								</div>
+							</div>
+							<div class="sale-item__img"><picture><source srcset="img/content/01.webp" type="image/webp"><img src="img/content/01.png" alt=""></picture></div>
+							<h5 class="sale-item__title">
+								Лодочный мотор Suzuki DF9.9BRS
+							</h5>
+							<p class="sale-item__footer">
+								Акция действует до
+								<span>31.08.2022</span>
+							</p>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="search page__seaction">
+				<div class="search__container">
+					<div class="search__inner">
+						<div data-tabs data-tabs-animate="400" class="search-tabs">
+							<nav data-tabs-titles class="search-tabs__navigation">
+								<button type="button" class="search-tabs__title _tab-active">Поиск по номеру</button>
+								<button type="button" class="search-tabs__title">Поиск по марке</button>
+								<button type="button" class="search-tabs__title">Поиск по названию товара</button>
+							</nav>
+							<div data-tabs-body class="search-tabs__content">
+								<div class="search-tabs__body">
+									<form class="search-tabs__form">
+										<input autocomplete="off" type="number" name="form[]" data-error="Ошибка" placeholder="Введите номер" class="search-tabs__input">
+										<button type="submit" class="search-tabs__button">Искать</button>
+									</form>
+								</div>
+								<div class="search-tabs__body">
+									<form class="search-tabs__form">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите марку" class="search-tabs__input">
+										<button type="submit" class="search-tabs__button">Искать</button>
+									</form>
+								</div>
+								<div class="search-tabs__body">
+									<form class="search-tabs__form">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите название товара" class="search-tabs__input">
+										<button type="submit" class="search-tabs__button">Искать</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220627002609"></script>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js?_v=20220627185043"></script>
+	<script src="js/app.min.js?_v=20220627185043"></script>
 </body>
 
 </html>
