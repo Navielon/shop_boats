@@ -223,14 +223,32 @@ h6 {
   background-color: #F0F0F4;
 }
 
+.products__title {
+  font-weight: 700;
+  font-size: 1.5625rem;
+  line-height: 1.2;
+  color: #000;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 1.5625rem;
+}
+
+.product {
+  margin-bottom: 2.8125rem;
+}
+
+.product__navigation {
+  margin-bottom: 1.5625rem;
+}
+
 .product__title {
   font-size: 0.9375rem;
   line-height: 1.2;
+  margin-right: 3.125rem;
+  padding-bottom: 0.75rem;
 }
 
 .product__title._tab-active {
-  border-radius: 0.3125rem;
-  background-color: #F0F0F4;
+  border-bottom: 2px solid #1C62CD;
 }
 
 .product-slider__item {
@@ -240,6 +258,75 @@ h6 {
   text-align: center;
   padding: 3.25rem 1.25rem 1.9375rem;
   width: 16.9375rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  height: 25.1875rem;
+  margin-right: 1.875rem;
+}
+
+.product-slider__item:hover {
+  -webkit-box-shadow: 0.1875rem 0.1875rem 1.25rem rgba(50, 50, 50, 0.25);
+          box-shadow: 0.1875rem 0.1875rem 1.25rem rgba(50, 50, 50, 0.25);
+}
+
+.product-slider__slider-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+}
+
+.product-slider__slider-btnprev {
+  left: -2.5rem;
+}
+
+.product-slider__slider-btnnext {
+  right: -2.5rem;
+}
+
+.product-item__sale::before {
+  content: "sale";
+  padding: 0.5rem 0.9375rem;
+  background-color: #1C62CD;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1.1666666667;
+  letter-spacing: 0.07em;
+}
+
+.product-item:hover .product-item__hover {
+  opacity: 0.9;
+  color: #000;
+}
+
+.product-item:hover .product-item__title,
+.product-item:hover .product-item__price {
+  color: #1C62CD;
+}
+
+.product-item__hover {
+  padding: 1.125rem 1.3125rem;
+  background-color: #fff;
+  color: #000;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.1875rem;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .product-item__favorite {
@@ -255,12 +342,20 @@ h6 {
 
 .product-item__title {
   padding: 0.875rem 1.5625rem;
+  font-size: 1.125rem;
+  line-height: 1.1666666667;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .product-item__price {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 1.2;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .product-item__basket {
@@ -276,10 +371,53 @@ h6 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  z-index: 5;
 }
 
 .product-item__basket:hover {
   fill: #656464;
+}
+
+.product-item__notify {
+  display: none;
+}
+
+.product-item__more {
+  text-align: center;
+}
+
+.product-item__more-link {
+  line-height: 1.2;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 1rem 2.6875rem;
+  background-color: #F0F0F4;
+}
+
+.product-slider__item.product-item__not-available .product-item__price {
+  display: none;
+}
+
+.product-slider__item.product-item__not-available .product-item__notify {
+  display: block;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.1666666667;
+}
+
+.product-slider__item.product-item__not-available .product-item__basket {
+  display: none;
+}
+
+.product-slider__item.product-item__not-available .product-item__notify-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #1C62CD;
+  display: inline-block;
+  border-bottom: 0.0625rem solid #1C62CD;
+  padding-top: 1.0625rem;
 }
 
 [class*=-ibg] {
@@ -528,7 +666,11 @@ h6 {
   min-height: 25rem;
 }
 
-.slick-active button {
+.slick-slide img {
+  display: inline-block;
+}
+
+.slick-active button li {
   background-color: #fff;
 }
 
@@ -828,7 +970,7 @@ h6 {
 }
 
 .slick-slide img {
-  display: block;
+  display: inblock;
 }
 
 .slick-slide.slick-loading img {
