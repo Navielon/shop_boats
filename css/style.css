@@ -639,6 +639,126 @@ h6 {
 }
 */
 
+.footer {
+  background-color: #F0F0F4;
+}
+
+.footer__top {
+  padding-top: 2.6875rem;
+}
+
+.footer__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__top-item {
+  width: 9.375rem;
+  margin-right: 6.25rem;
+}
+
+.footer__top-title {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.2142857143;
+  color: #000;
+}
+
+.footer__top-title:first-child {
+  width: 13.875rem;
+}
+
+.footer__top-newslatter {
+  width: 18.4375rem;
+  margin-right: 10rem;
+}
+
+.footer__top-form {
+  margin-top: 2.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social {
+  width: 15.625rem;
+}
+
+.footer__top-input {
+  display: inline-block;
+  width: 12.5625rem;
+  height: 2.0625rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.2142857143;
+  padding: 0.5rem 0.75rem;
+}
+
+.footer__top-button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.6875rem;
+  line-height: 1.1818181818;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background-color: #1C62CD;
+  color: #fff;
+  padding: 0.625rem 1rem;
+}
+
+.footer__bottom {
+  padding: 2.875rem 0 1.375rem 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__bottom-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.1666666667;
+  color: #000;
+  margin: 0 2.5rem;
+}
+
+.footer-list__item {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.2142857143;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15.625rem;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-list__item {
+  margin: 0 0.9375rem;
+  width: 12.5rem;
+}
+
+.social-list-link {
+  font-size: 14px;
+  line-height: 17px;
+}
+
 .page__section {
   margin-bottom: 5rem;
 }
