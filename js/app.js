@@ -242,6 +242,9 @@
             nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="img/icons/arrow-right.svg" alt=""></button>'
         });
         $(".product-slider").slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
             slidesToShow: 4,
             slidesToscroll: 1,
             prevArrow: '<button class="product-slider__slider-btn product-slider__slider-btnprev"><img src="img/icons/arrow-black-left.svg" alt=""></button>',
