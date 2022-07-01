@@ -1579,10 +1579,6 @@ h6 {
   border-bottom: 0.125rem solid blue;
 }
 
-.price-filter {
-  padding: 0rem 0.625rem;
-}
-
 .price-filter__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1629,6 +1625,7 @@ h6 {
 }
 
 .price-filter__inputs {
+  padding: 0rem 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
