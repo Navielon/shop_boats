@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Каталог</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220701123845">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220701202709">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,20 +119,20 @@
 					<h2 class="catalog__title">
 						Гидроциклы
 					</h2>
-					<div class="catalog__filter">
-						<div class="catalog__filter-items">
-							<button class="catalog__filter-button">Полноприводные</button>
-							<button class="catalog__filter-button">от 5000</button>
-							<button class="catalog__filter-button">BRP</button>
-							<button class="catalog__filter-button">еще</button>
+					<div class="catalog__box">
+						<div class="catalog__box-items">
+							<button class="catalog__box-button">Полноприводные</button>
+							<button class="catalog__box-button">от 5000</button>
+							<button class="catalog__box-button">BRP</button>
+							<button class="catalog__box-button">еще</button>
 						</div>
-						<div class="catalog__filter-btn">
-							<select class="catalog__filter-select" name="" id="">
+						<div class="catalog__box-btn">
+							<select class="catalog__box-select" name="" id="">
 								<option value="">По полулярности</option>
 								<option value="">По рейтингу</option>
 								<option value="">По цене</option>
 							</select>
-							<button class="catalog__filter-btngrid">
+							<button class="catalog__box-btngrid">
 								<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2" />
 									<rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
@@ -141,7 +141,7 @@
 									<rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
 								</svg>
 							</button>
-							<button class="catalog__filter-btnline">
+							<button class="catalog__box-btnline">
 								<svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<g opacity="1">
 										<rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
@@ -156,8 +156,69 @@
 						</div>
 					</div>
 					<div class="catalog__inner">
-						<aside class="catalog__inner-aside">
+						<aside class="catalog__inner-aside aside-filter">
+							<div data-tabs class="aside-filter">
+								<nav data-tabs-titles class="aside-filter__navigation">
+									<button type="button" class="aside-filter__title _tab-active">Параметры</button>
+									<button type="button" class="aside-filter__title">по марке</button>
+								</nav>
+								<div data-tabs-body class="aside-filter__content">
+									<div class="aside-filter__body">
+										<div class="catalog__filter filter-catalog">
+											<div data-spollers class="filter-catalog__items">
+												<div class="filter-catalog__item item-filter-catalog">
+													<button type="button" data-spoller class="price-filter__title">Наличие</button>
+													<div class="item-filter-catalog__body">
+														<div class="checkbox">
+															<input id="c_1" type="checkbox" name="form[]" data-error="Ошибка" class="item-filter-catalog__input">
+															<label for="c_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+														</div>
+													</div>
+												</div>
+												<div class="filter-catalog__item item-filter-catalog">
+													<button type="button" data-spoller class="price-filter__title">Новинки</button>
+													<div class="item-filter-catalog__body">
+														<div class="checkbox">
+															<input id="c_1" type="radio" name="form[]" data-error="Ошибка" class="item-filter-catalog__input">
+															<label for="c_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+														</div>
+													</div>
+												</div>
+												<div class="filter-catalog__price price-filter">
+													<button type="button" data-spoller class="price-filter__title">Цена</button>
+													<div data-range class="price-filter__body">
+														<div data-range-item class="price-filter__range"></div>
+														<div class="price-filter__inputs">
+															<div class="price-filter__imp">
+																<span class="price-filter__text">От</span>
+																<input data-range-from="0" autocomplete="off" type="text" value="100000" name="form[]" class="price-filter__input">
+															</div>
+															<div class="price-filter__imp">
+																<span class="price-filter__text">До</span>
+																<input data-range-to="5000000" autocomplete="off" type="text" value="2000000" name="form[]" class="price-filter__input">
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter-catalog__item item-filter-catalog">
+													<button type="button" data-spoller class="price-filter__title">Наличие</button>
+													<div class="item-filter-catalog__body">
+														<div class="checkbox">
+															<input id="c_1" type="checkbox" name="form[]" data-error="Ошибка" class="item-filter-catalog__input">
+															<label for="c_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+														</div>
+													</div>
+												</div>
 
+											</div>
+										</div>
+									</div>
+									<div class="aside-filter__body">
+										Содержимое второго таба
+									</div>
+
+								</div>
+							</div>
 						</aside>
 
 						<div class="catalog__inner-list">
@@ -646,8 +707,8 @@
 		</div>
 	</div>
 </div> -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js?_v=20220701123845"></script>
-	<script src="js/app.min.js?_v=20220701123845"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js?_v=20220701202709"></script>
+	<script src="js/app.min.js?_v=20220701202709"></script>
 </body>
 
 </html>
