@@ -1091,6 +1091,117 @@ h6 {
   display: none;
 }
 
+.catalog {
+  margin-bottom: 6.25rem;
+}
+
+.catalog__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__title {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  margin-bottom: 1.625rem;
+  color: #000;
+}
+
+.catalog__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.125rem;
+}
+
+.catalog__filter-button {
+  margin-right: 0.625rem;
+  background-color: #F0F0F4;
+  padding: 0.25rem 1.375rem;
+}
+
+.catalog__filter-items {
+  font-size: 0.875rem;
+  line-height: 1.2142857143;
+  color: #000;
+  opacity: 0.7;
+}
+
+.catalog__filter-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__filter-select {
+  margin-right: 2.125rem;
+  border: 0.0625rem solid #CDCDCD;
+  padding: 0.5rem 1.25rem;
+}
+
+.catalog__filter-btngrid {
+  margin-right: 0.625rem;
+}
+
+.catalog__inner-aside {
+  min-width: 18.125rem;
+  margin-right: 0.625rem;
+}
+
+.catalog__inner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 4.375rem;
+}
+
+.pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination-list__item {
+  list-style: none;
+  padding: 0.5rem 0.9375rem;
+  border: 0.125rem solid transparent;
+  color: #CDCDCD;
+  margin: 0 0.25rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.2222222222;
+}
+
+.pagination-list__item._active {
+  border: 0.125rem solid #1C62CD;
+  color: blue;
+}
+
+.pagination-list__item a {
+  display: block;
+}
+
+.product__item {
+  margin-bottom: 1.875rem;
+}
+
 /* Slider */
 
 .slick-slider {
