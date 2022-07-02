@@ -1,0 +1,122 @@
+//====================================================================================================
+.footer {
+    background-color: $gray;
+    // .footer__container
+    &__container {
+    }
+
+    // .footer__top
+    &__top {
+        padding-top: rem(43);
+    }
+
+    // .footer__top-inner
+    &__top-inner {
+        display: flex;
+    }
+
+    // .footer__top-item
+    &__top-item {
+        width: rem(150);
+        margin-right: rem(100);
+    }
+
+    // .footer__top-title
+    &__top-title {
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: math.div(17, 14);
+        color: $dark;
+        &:first-child{
+            width: rem(222);
+        }
+    }
+    &__top-newslatter{
+        width: rem(295);
+        margin-right: rem(160);
+    }
+    &__top-form{
+        margin-top: rem(34);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-social{
+        width: rem(250);
+    }
+    // .footer__top-input
+    &__top-input {
+        display: inline-block;
+        width: rem(201);
+        height: rem(33);
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(17, 14);
+        padding: rem(8) rem(12);
+    }
+
+    // .footer__top-button
+    &__top-button {
+        display: inline-block;
+        font-weight: 600;
+        font-size: rem(11);
+        line-height: math.div(13, 11);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background-color: $blue;
+        color: $white;
+        padding: rem(10) rem(16);
+    }
+
+    // .footer__bottom
+    &__bottom {
+        padding: rem(46) 0  rem(22) rem(100);
+        display: flex;
+        justify-content: center;
+    }
+
+    // .footer__bottom-link
+    &__bottom-link {
+        display: inline-block;
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: math.div(14, 12);
+        color: $dark;
+        margin: 0 rem(40);
+    }
+}
+.footer-list {
+
+    // .footer-list__item
+    &__item {
+        
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(17, 14);
+    }
+}
+.social {
+    
+    // .social__list-link
+    &__list-link {
+
+    }
+}
+.social-list {
+    display: flex;
+    width: rem(250);
+    height: 100%;
+    align-items: center;
+    // .social-list__item
+    &__item {
+        margin: 0 rem(15);
+        width: rem(200);
+        
+    }
+    &-link{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+//====================================================================================================
