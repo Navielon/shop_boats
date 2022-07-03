@@ -2012,6 +2012,14 @@ textarea.input {
   gap: 1.25rem;
 }
 
+.checkbox-link {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.2142857143;
+  border-bottom: 0.0625rem solid #1C62CD;
+  color: #1C62CD;
+}
+
 .check__box {
   display: -ms-grid;
   display: grid;
@@ -2065,6 +2073,11 @@ textarea.input {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #CDCDCD;
+}
+
+.filter-reset__button:hover,
+.filter-reset__button:active {
+  color: #000;
 }
 
 .price-filter__select-title {
