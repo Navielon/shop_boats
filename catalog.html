@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220703104752">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220703145617">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -168,22 +168,23 @@
 											<div data-spollers class="filter-catalog__items">
 												<div class="filter-catalog__item item-filter-catalog">
 													<button type="button" data-spoller class="price-filter__title">Наличие</button>
-													<div class="item-filter-catalog__body">
-														<div class="checkbox">
-															<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_1" class="checkbox__label"><span class="checkbox__text">В наличии</span></label>
+													<div class="item-filter-catalog__body item-filter-catalog__body-availability">
+														<div class="check__box checkbox-availability">
+															<div class="checkbox">
+																<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_1" class="checkbox__label"><span class="checkbox__text">В наличии</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_2" class="checkbox__label"><span class="checkbox__text">Под заказ</span></label>
+															</div>
 														</div>
-														<div class="checkbox">
-															<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_2" class="checkbox__label"><span class="checkbox__text">Под заказ</span></label>
-														</div>
-
 													</div>
 												</div>
 												<div class="filter-catalog__item item-filter-catalog">
 													<button type="button" data-spoller class="price-filter__title">Новинки</button>
 													<div class="item-filter-catalog__body">
-														<div class="options">
+														<div class="item-filter-catalog__options">
 															<div class="options__item">
 																<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
 																<label for="o_1" class="options__label"><span class="options__text">Все</span></label>
@@ -219,21 +220,21 @@
 													<div class="filter-catalog__select-box">
 														<span class="filter-catalog__textsel">Мощность, л.с.</span>
 														<select name="form[]" data-class-modif="form">
-															<option value="1" selected>90</option>
-															<option value="2">130</option>
-															<option value="3">154</option>
-															<option value="4">230</option>
-															<option value="5">300</option>
+															<option class="filter-catalog__option" value="1" selected>90</option>
+															<option class="filter-catalog__option" value="2">130</option>
+															<option class="filter-catalog__option" value="3">154</option>
+															<option class="filter-catalog__option" value="4">230</option>
+															<option class="filter-catalog__option" value="5">300</option>
 														</select>
 													</div>
 													<div class="filter-catalog__select-box">
 														<span class="filter-catalog__textsel">Мощность двигателя, л.с..</span>
 														<select name="form[]" data-class-modif="form">
-															<option value="1" selected>90</option>
-															<option value="2">130</option>
-															<option value="3">154</option>
-															<option value="4">230</option>
-															<option value="5">300</option>
+															<option class="filter-catalog__option" value="1" selected>90</option>
+															<option class="filter-catalog__option" value="2">130</option>
+															<option class="filter-catalog__option" value="3">154</option>
+															<option class="filter-catalog__option" value="4">230</option>
+															<option class="filter-catalog__option" value="5">300</option>
 														</select>
 													</div>
 													<div class="filter-catalog__select-box">
@@ -249,27 +250,30 @@
 												</div>
 												<div class="filter-catalog__item item-filter-catalog">
 													<button type="button" data-spoller class="price-filter__title">Бренд</button>
-													<div class="item-filter-catalog__body">
-														<div class="checkbox">
-															<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_3" class="checkbox__label"><span class="checkbox__text">BRP</span></label>
+													<div class="item-filter-catalog__body item-filter-catalog__body-brand">
+														<div class="check__box checkbox-brand">
+															<div class="checkbox">
+																<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_3" class="checkbox__label"><span class="checkbox__text">BRP</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_4" class="checkbox__label"><span class="checkbox__text">Spark 2</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_5" class="checkbox__label"><span class="checkbox__text">Spark 2</span></label>
+															</div>
 														</div>
-														<div class="checkbox">
-															<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_4" class="checkbox__label"><span class="checkbox__text">Spark 2</span></label>
-														</div>
-														<div class="checkbox">
-															<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_5" class="checkbox__label"><span class="checkbox__text">Spark 2</span></label>
-														</div>
+
 														<a href="" class="checkbox-link">Показать еще</a>
 													</div>
 												</div>
 												<div class="filter-catalog__item item-filter-catalog">
 													<button type="button" data-spoller class="price-filter__title">Модель</button>
-													<div class="item-filter-catalog__body">
-														<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите модель" class="input">
-														<div class="check__box">
+													<div class="item-filter-catalog__body item-filter-catalog__body-model">
+														<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите модель" class="item-filter-catalog__body-input">
+														<div class="check__box checkbox-model">
 															<div class="checkbox">
 																<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
 																<label for="c_6" class="checkbox__label"><span class="checkbox__text">Sea-doo Spark 2</span></label>
@@ -292,52 +296,65 @@
 												</div>
 												<div class="filter-catalog__item item-filter-catalog">
 													<button type="button" data-spoller class="price-filter__title">Акции</button>
-													<div class="item-filter-catalog__body">
-														<div class="checkbox">
-															<input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_10" class="checkbox__label"><span class="checkbox__text">BRP</span></label>
+													<div class="item-filter-catalog__body item-filter-catalog__body-stocks">
+														<div class="check__box">
+															<div class="checkbox">
+																<input id="c_10" data-error="Ошибка" class="checkbox__input checkbox__input-stocks" type="checkbox" value="1" name="form[]">
+																<label for="c_10" class="checkbox__label checkbox__label-stocks"><span class="checkbox__text">SALE</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_11" class="checkbox__label"><span class="checkbox__text">NEW</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_12" class="checkbox__label"><span class="checkbox__text">HIT</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_13" class="checkbox__label"><span class="checkbox__text">ДИЛЕР</span></label>
+															</div>
 														</div>
-														<div class="checkbox">
-															<input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_11" class="checkbox__label"><span class="checkbox__text">Spark 2</span></label>
-														</div>
-														<div class="checkbox">
-															<input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_12" class="checkbox__label"><span class="checkbox__text">Spark 2</span></label>
-														</div>
+
 														<a href="" class="checkbox-link">Показать еще</a>
 													</div>
 												</div>
 												<div class="filter-catalog__item item-filter-catalog">
 													<button type="button" data-spoller class="price-filter__title">Страны</button>
-													<div class="item-filter-catalog__body">
-														<div class="checkbox">
-															<input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_13" class="checkbox__label"><span class="checkbox__text">Россия</span></label>
+													<div class="item-filter-catalog__body item-filter-catalog__body-countries">
+														<div class="check__box checkbox-countries">
+															<div class="checkbox">
+																<input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_14" class="checkbox__label"><span class="checkbox__text">Россия</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_15" class="checkbox__label"><span class="checkbox__text">Германия</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_16" class="checkbox__label"><span class="checkbox__text">Китай</span></label>
+															</div>
+															<div class="checkbox">
+																<input id="c_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_17" class="checkbox__label"><span class="checkbox__text">CША</span></label>
+															</div>
 														</div>
-														<div class="checkbox">
-															<input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_14" class="checkbox__label"><span class="checkbox__text">Германия</span></label>
-														</div>
-														<div class="checkbox">
-															<input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_15" class="checkbox__label"><span class="checkbox__text">Китай</span></label>
-														</div>
-														<div class="checkbox">
-															<input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-															<label for="c_16" class="checkbox__label"><span class="checkbox__text">CША</span></label>
-														</div>
+
 														<a href="" class="checkbox-link">Показать еще</a>
 													</div>
 												</div>
-												<button type="submit" class="filter-select__button">Выбрать</button>
-												<div class="filter-catalog__item item-filter-catalog">
-													<button type="button" data-spoller class="price-filter__title price-filter__select-title">Дополнительные параметры</button>
-													<div class="item-filter-catalog__body">
+												<div class="filter-select__box">
+													<button type="submit" class="filter-select__button">Выбрать</button>
+													<div class="filter-catalog__item item-filter-catalog filter-select__parameters">
+														<button type="button" data-spoller class="price-filter__title price-filter__select-title">Дополнительные параметры</button>
+														<div class="item-filter-catalog__body">
 
+														</div>
 													</div>
+													<button type="submit" class="filter-reset__button">Сбросить фильтр</button>
 												</div>
-												<button type="submit" class="filter-reset__button">Сбросить фильтр</button>
+
 											</div>
 										</div>
 									</div>
@@ -835,8 +852,8 @@
 		</div>
 	</div>
 </div> -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js?_v=20220703104752"></script>
-	<script src="js/app.min.js?_v=20220703104752"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js?_v=20220703145617"></script>
+	<script src="js/app.min.js?_v=20220703145617"></script>
 </body>
 
 </html>
