@@ -314,6 +314,12 @@ textarea.input {
 }
 
 .select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
   position: relative;
 }
 
@@ -1786,6 +1792,26 @@ textarea.input {
   margin-right: 2.125rem;
   border: 0.0625rem solid #CDCDCD;
   padding: 0.5rem 1.25rem;
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 0.875rem;
+  line-height: 1.2142857143;
+}
+
+.catalog__box-select:not([multiple]) {
+  padding-right: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.9375rem) 0.9375rem;
+  background-size: 0.85em auto;
+  background-image: url(../../../img/catalog/icons/arrow-bottom.svg);
+}
+
+.catalog__box-select::-ms-expand {
+  display: none;
 }
 
 .catalog__box-btngrid {
@@ -1835,15 +1861,26 @@ textarea.input {
 
 .pagination-list__item._active {
   border: 0.125rem solid #1C62CD;
-  color: blue;
+  color: #1C62CD;
 }
 
 .pagination-list__item a {
   display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.pagination-list__item a:hover {
+  color: blue;
 }
 
 .product__item {
   margin-bottom: 1.875rem;
+}
+
+.product__item-box-title {
+  padding: 0;
 }
 
 .aside-filter__title {
@@ -2055,9 +2092,7 @@ textarea.input {
   transition: all 0.3s;
 }
 
-.filter-select__button:hover,
-.filter-select__button:active,
-.filter-select__button:focus {
+.filter-select__button-active {
   background-color: #1C62CD;
   color: #fff;
 }
@@ -2109,6 +2144,31 @@ textarea.input {
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.product__item.product-item__not-available .product-item__price {
+  display: none;
+}
+
+.product__item.product-item__not-available .product-item__notify {
+  display: block;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.1666666667;
+}
+
+.product__item.product-item__not-available .product-item__basket {
+  display: none;
+}
+
+.product__item.product-item__not-available .product-item__notify-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  color: #1C62CD;
+  display: inline-block;
+  border-bottom: 0.0625rem solid #1C62CD;
+  padding-top: 1.0625rem;
 }
 
 /* Slider */
