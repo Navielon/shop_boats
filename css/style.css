@@ -1894,7 +1894,7 @@ textarea.input {
   background-repeat: no-repeat;
   background-position: calc(100% - 0.9375rem) 0.9375rem;
   background-size: 0.85em auto;
-  background-image: url(../../../img/catalog/icons/arrow-bottom.svg);
+  background-image: url(../img/catalog/icons/arrow-bottom.svg);
 }
 
 .catalog__box-select::-ms-expand {
