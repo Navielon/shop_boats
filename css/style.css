@@ -270,11 +270,6 @@ textarea.input {
   border-radius: 0.3125rem;
 }
 
-.options__input:focus + .options__label:before {
-  -webkit-box-shadow: 0 0 0.3125rem #1C62CD;
-          box-shadow: 0 0 0.3125rem #1C62CD;
-}
-
 .options__input:checked + .options__label:after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -283,7 +278,6 @@ textarea.input {
 
 .options__input:checked + .options__label:before {
   border-radius: 0.3125rem;
-  background: #1C62CD;
 }
 
 .options__label {
@@ -311,6 +305,22 @@ textarea.input {
       -ms-flex: 0 0 20px;
           flex: 0 0 20px;
   border: 1px solid #a7a9ac;
+}
+
+.options__label::after {
+  content: "";
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0.125rem;
+  left: 0.125rem;
+  background-color: #1C62CD;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .select {
@@ -2547,6 +2557,187 @@ textarea.input {
   letter-spacing: 0.12em;
   background-color: #1C62CD;
   padding: 1rem 3.3125rem;
+}
+
+.product-abouts {
+  margin-bottom: 6.25rem;
+}
+
+.product-about {
+  margin-bottom: 6.25rem;
+}
+
+.product-about__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F0F0F4;
+  padding: 1.375rem 2.1875rem;
+  margin-bottom: 3.125rem;
+}
+
+.product-about__title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #2F3035;
+  opacity: 0.6;
+  padding-bottom: 0.3125rem;
+}
+
+.product-about__title._tab-active {
+  color: #2F3035;
+  opacity: 1;
+  border-bottom: 0.125rem solid #1C62CD;
+}
+
+.info-shop__takes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-shop__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-shop__text {
+  margin-right: 1.875rem;
+}
+
+.info-shop__input {
+  background-color: #F0F0F4;
+  padding-left: 1.0625rem;
+  padding: 0.25rem 0rem 0.25rem 1.0625rem;
+  display: inline-block;
+}
+
+.info-shop__input::-webkit-input-placeholder {
+  color: #CDCDCD;
+}
+
+.info-shop__input::-moz-placeholder {
+  color: #CDCDCD;
+}
+
+.info-shop__input:-ms-input-placeholder {
+  color: #CDCDCD;
+}
+
+.info-shop__input::-ms-input-placeholder {
+  color: #CDCDCD;
+}
+
+.info-shop__input::placeholder {
+  color: #CDCDCD;
+}
+
+.info-shop__take {
+  margin-bottom: 3.5rem;
+}
+
+.info-shop__options {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.info-shop__options-label {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.1764705882;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info-shop__options-label::before {
+  border: 0.125rem solid #1C62CD;
+}
+
+.info-shop__options-label::after {
+  content: "";
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 0.21875rem;
+  left: 0.25rem;
+  background-color: #1C62CD;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info-shop__options-label:checked + .info-shop__options-label:before {
+  background-color: transparent;
+}
+
+.info-shop__titles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-shop__options-item {
+  margin-right: 3.125rem;
+}
+
+.info-shop__options-item:last-child {
+  margin-right: 0;
+}
+
+.item-shop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.125rem solid #F0F0F4;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #2F3035;
+}
+
+.item-shop__adress {
+  opacity: 0.7;
+}
+
+.item-shop__text {
+  opacity: 0.7;
+}
+
+.item-shop__link-buy {
+  background-color: #1C62CD;
+  padding: 0.625rem 2.5rem;
+  color: #fff;
+}
+
+.item-shop__vailability-text {
+  opacity: 0.7;
+}
+
+.item-shop__quantity-text {
+  opacity: 0.7;
 }
 
 @media (any-hover: hover) {
